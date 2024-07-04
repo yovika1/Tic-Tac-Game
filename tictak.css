@@ -12,7 +12,6 @@ body {
         border: none;
         width: 10%;
         position: fixed;
-        /* top: 200px; */
         left: -54%;
     }
   }
@@ -49,8 +48,7 @@ body {
  #rbtn{
     font-size: 10px;
      text-align: center;
-        /* height: 150px;
-        width: 100px; */
+    padding: 8px;
      cursor: pointer;
      margin-top: -10%;
      position: absolute;
