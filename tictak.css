@@ -18,6 +18,23 @@ body {
     border-color: blue;
 }
 
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: url("https://tse1.mm.bing.net/th?id=OIP.vTVAHbkiUmyLdlSFeaJ32QHaEK&pid=Api&P=0&h=180");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container {
+        width: 100%;
+        top: 100px;
+        left: 50px;
+        padding: 20px;
+    }
+}
+
+
  .btn1{
  display: flex;
  justify-content: center;
