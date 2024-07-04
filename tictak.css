@@ -7,14 +7,14 @@ body {
 
 }
 
-/* @media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) {
    .container {
         width: 400px;
         top: 200px;
         left: 40%;
     }
 
-    .score{
+    /* .score{
         font-size: 50px;
         color:antiquewhite;
         display: block;
@@ -22,9 +22,9 @@ body {
         height: 60px;
         padding: 10px 0 0 0;
         will-change: transform;
-    }
+    } */
     
-} */
+}
 
 
 .container {
