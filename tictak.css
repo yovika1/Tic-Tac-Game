@@ -6,30 +6,10 @@ body {
     background-attachment: fixed;
 
 }
-
-@media only screen and (min-width: 600px) {
-   .container {
-        width: 400px;
-        top: 200px;
-        left: 40%;
-    }
-
-    /* .score{
-        font-size: 50px;
-        color:antiquewhite;
-        display: block;
-        margin-left: 140px;
-        height: 60px;
-        padding: 10px 0 0 0;
-        will-change: transform;
-    } */
-    
-}
-
-
 .container {
     border: none;
     width: 400px;
+    position: absolute;
     top: 200px;
     left: 34%;
 }
