@@ -18,207 +18,141 @@ body {
     border-color: blue;
 }
 
-/* Media query for mobile devices */
-@media only screen and (max-width: 600px) {
-    body {
-        background-image: url("https://tse1.mm.bing.net/th?id=OIP.vTVAHbkiUmyLdlSFeaJ32QHaEK&pid=Api&P=0&h=180");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+.btn1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.btn {
+    font-size: 60px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    color: navajowhite;
+}
+
+#d1, #d2, #d3, #d4, #d5, #d6, #d7, #d8, #d9 {
+    font-size: 60px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    color: navajowhite;
+}
+
+#d1:hover, #d2:hover, #d3:hover, #d4:hover, #d5:hover, #d6:hover, #d7:hover, #d8:hover, #d9:hover {
+    font-size: 100px;
+}
+
+.action {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 600px;
+    margin-left: -300px;
+    margin-top: 280px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.action p {
+    font: 20px "Raleway", sans-serif;
+    font-weight: 400;
+    color: antiquewhite;
+    text-transform: uppercase;
+    line-height: 1;
+    display: inline-block;
+    margin: 11px;
+    padding: 0;
+}
+
+.score {
+    font-size: 50px;
+    color: antiquewhite;
+    display: block;
+    height: 60px;
+    padding: 10px 0 0 0;
+    will-change: transform;
+}
+
+.action.p1 .p2 {
+    display: none;
+}
+
+#btn {
+    position: relative;
+    bottom: 600px;
+    right: -59px;
+    height: 38px;
+    background-color: antiquewhite;
+}
+
+#btn:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
+
+/* Media query for tablets */
+@media only screen and (max-width: 768px) {
     .container {
         width: 100%;
-        top: 100px;
-        left: 50px;
+        top: 150px;
+        left: 0;
         padding: 20px;
+    }
+
+    .btn, #d1, #d2, #d3, #d4, #d5, #d6, #d7, #d8, #d9 {
+        font-size: 40px;
+        height: 80px;
+        width: 80px;
+    }
+
+    .action {
+        width: 90%;
+        margin-left: -45%;
+        margin-top: 200px;
+    }
+
+    .score {
+        font-size: 40px;
+    }
+
+    #btn {
+        bottom: 400px;
+        right: -20px;
     }
 }
 
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        top: 100px;
+        left: 0;
+        padding: 10px;
+    }
 
- .btn1{
- display: flex;
- justify-content: center;
- align-items: center;
- }
- 
- .btn{
-     font-size: 60px;
-     text-align: center;
-     height: 100px;
-     width: 100px;
-     cursor: pointer;
-     color:navajowhite;
- }
- 
- #d1
- {
-    font-size: 60px;
-     text-align: center;
-     height: 100px;
-     width: 100px;
-     cursor: pointer;
-     color:navajowhite; 
-      border:none;  
-   
- }
- #d1:hover{
-     font-size: 100px;
- }
- #d2
- {
-     border-bottom: none;  
-     border-right: none; 
-     font-size: 60px;
-     text-align: center;
-     cursor: pointer;
-   border-top:none;
-   height: 100px;
-   width: 100px;
-   color:navajowhite;
-   
- }
- #d2:hover{
-     font-size: 100px;
- }
- #d3{
-     font-size: 60px;
-     text-align: center;
-     cursor: pointer;
-     border-top: none;
-     border-right: none;
-     border-bottom: none;
-     height: 100px;
-     color:navajowhite;
-     width: 100px; 
- }
- #d3:hover{
-     font-size: 100px;
- }
- #d4{
-     font-size: 60px;
-     text-align: center;
-     cursor: pointer;
-     border-left: none;
-     border-right: none;
-     height: 100px;
-     color:navajowhite;
-     width: 100px;
- }
- #d4:hover{
-     font-size: 100px;
- }
- 
- #d5{font-size: 60px;
-     text-align: center;
-     cursor: pointer;
-     height: 100px;
-     width: 100px;
-     color:navajowhite;
-     border-right: none;
- }
- #d5:hover{
-     font-size: 100px;
- }
- 
- #d6{
-     font-size: 60px;
-     text-align: center;
-     cursor: pointer;
-     border-right: none;
-     height: 100px;
-     width: 100px;
-     color:navajowhite;
- } 
- #d6:hover{
-     font-size: 100px;
- }
- 
- #d7{
-     font-size: 60px;
-     text-align: center;
-     cursor: pointer;
-     border-top: none;
- border-left: none;
- border-bottom: none;
- border-right: none;
- height: 100px;
- color:navajowhite;
-   
-     width: 100px;
- }
- #d7:hover{
-     font-size: 100px;
- }
- #d8{
-     font-size: 60px;
-     text-align: center;
-     cursor: pointer;
-     border-top: none;
-     border-bottom: none;
-     border-right: none;
-     height: 100px;
-     width: 100px;
-     color:navajowhite;
- }
- #d8:hover{
-     font-size: 100px;
- }
- 
- #d9{
-     font-size: 60px;
-     text-align: center;
-     cursor: pointer;
-     border-top: none;
-     border-right: none;
-     border-bottom: none;
-     height: 100px;
-     color:navajowhite;
-     width: 100px;
- }
- #d9:hover{
-     font-size: 100px;
- }
- .action{position: absolute;
-     left: 50%;
-     top: 50%;
-     width: 600px;
-     margin-left: -300px;
-     margin-top: 280px;
-     text-align: center;
-     cursor: pointer;
-     user-select: none;
- }
- .action p{
-     font: 20px  "Raleway",sans-serif;
-     font-weight: 400;
-     color: antiquewhite;
-     text-transform: uppercase;
-     line-height: 1;
-     display: inline-block;
-     margin: 11px;
-     padding: 0;
- }
- .score{
-     font-size: 50px;
-     color:antiquewhite;
-     display: block;
-     height: 60px;
-     padding: 10px 0 0 0;
-     will-change: transform;
- }
- 
- .action.p1 .p2{
-     display: none;
- }
- #btn{
-     position: relative;
-     bottom: 600px;
-     right: -59px;
-     height: 38px;
-     background-color: antiquewhite;
- }
- #btn:hover{
-     background-color: aqua;
- cursor: pointer;
- }
- 
+    .btn, #d1, #d2, #d3, #d4, #d5, #d6, #d7, #d8, #d9 {
+        font-size: 30px;
+        height: 60px;
+        width: 60px;
+    }
+
+    .action {
+        width: 100%;
+        margin-left: -50%;
+        margin-top: 150px;
+    }
+
+    .score {
+        font-size: 30px;
+    }
+
+    #btn {
+        bottom: 300px;
+        right: -10px;
+    }
+}
