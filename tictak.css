@@ -46,10 +46,11 @@ body {
      color:navajowhite;
  }
  #rbtn{
-    font-size: 10px;
+    font-size: 20px;
      text-align: center;
     padding: 8px;
      cursor: pointer;
+     font-weight: 700;
      margin-top: -10%;
      position: absolute;
      color:rgb(32, 28, 25);
