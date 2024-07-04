@@ -1,0 +1,207 @@
+/* body {
+    background-image: url("https://tse1.mm.bing.net/th?id=OIP.vTVAHbkiUmyLdlSFeaJ32QHaEK&pid=Api&P=0&h=180");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    border: none;
+    width: 400px;
+    position: absolute;
+    top: 200px;
+    left: 34%;
+}
+
+.container .btn1 button {
+    background: transparent;
+    outline: none !important;
+    border-color: blue;
+} */
+
+ .btn1{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ }
+ 
+ .btn{
+     font-size: 60px;
+     text-align: center;
+     height: 100px;
+     width: 100px;
+     cursor: pointer;
+     color:navajowhite;
+ }
+ 
+ #d1
+ {
+    font-size: 60px;
+     text-align: center;
+     height: 100px;
+     width: 100px;
+     cursor: pointer;
+     color:navajowhite; 
+      border:none;  
+   
+ }
+ #d1:hover{
+     font-size: 100px;
+ }
+ #d2
+ {
+     border-bottom: none;  
+     border-right: none; 
+     font-size: 60px;
+     text-align: center;
+     cursor: pointer;
+   border-top:none;
+   height: 100px;
+   width: 100px;
+   color:navajowhite;
+   
+ }
+ #d2:hover{
+     font-size: 100px;
+ }
+ #d3{
+     font-size: 60px;
+     text-align: center;
+     cursor: pointer;
+     border-top: none;
+     border-right: none;
+     border-bottom: none;
+     height: 100px;
+     color:navajowhite;
+     width: 100px; 
+ }
+ #d3:hover{
+     font-size: 100px;
+ }
+ #d4{
+     font-size: 60px;
+     text-align: center;
+     cursor: pointer;
+     border-left: none;
+     border-right: none;
+     height: 100px;
+     color:navajowhite;
+     width: 100px;
+ }
+ #d4:hover{
+     font-size: 100px;
+ }
+ 
+ #d5{font-size: 60px;
+     text-align: center;
+     cursor: pointer;
+     height: 100px;
+     width: 100px;
+     color:navajowhite;
+     border-right: none;
+ }
+ #d5:hover{
+     font-size: 100px;
+ }
+ 
+ #d6{
+     font-size: 60px;
+     text-align: center;
+     cursor: pointer;
+     border-right: none;
+     height: 100px;
+     width: 100px;
+     color:navajowhite;
+ } 
+ #d6:hover{
+     font-size: 100px;
+ }
+ 
+ #d7{
+     font-size: 60px;
+     text-align: center;
+     cursor: pointer;
+     border-top: none;
+ border-left: none;
+ border-bottom: none;
+ border-right: none;
+ height: 100px;
+ color:navajowhite;
+   
+     width: 100px;
+ }
+ #d7:hover{
+     font-size: 100px;
+ }
+ #d8{
+     font-size: 60px;
+     text-align: center;
+     cursor: pointer;
+     border-top: none;
+     border-bottom: none;
+     border-right: none;
+     height: 100px;
+     width: 100px;
+     color:navajowhite;
+ }
+ #d8:hover{
+     font-size: 100px;
+ }
+ 
+ #d9{
+     font-size: 60px;
+     text-align: center;
+     cursor: pointer;
+     border-top: none;
+     border-right: none;
+     border-bottom: none;
+     height: 100px;
+     color:navajowhite;
+     width: 100px;
+ }
+ #d9:hover{
+     font-size: 100px;
+ }
+ .action{position: absolute;
+     left: 50%;
+     top: 50%;
+     width: 600px;
+     margin-left: -300px;
+     margin-top: 280px;
+     text-align: center;
+     cursor: pointer;
+     user-select: none;
+ }
+ .action p{
+     font: 20px  "Raleway",sans-serif;
+     font-weight: 400;
+     color: antiquewhite;
+     text-transform: uppercase;
+     line-height: 1;
+     display: inline-block;
+     margin: 11px;
+     padding: 0;
+ }
+ .score{
+     font-size: 50px;
+     color:antiquewhite;
+     display: block;
+     height: 60px;
+     padding: 10px 0 0 0;
+     will-change: transform;
+ }
+ 
+ .action.p1 .p2{
+     display: none;
+ }
+ #btn{
+     position: relative;
+     bottom: 600px;
+     right: -59px;
+     height: 38px;
+     background-color: antiquewhite;
+ }
+ #btn:hover{
+     background-color: aqua;
+ cursor: pointer;
+ }
+ 

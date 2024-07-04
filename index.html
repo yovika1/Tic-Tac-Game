@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiktak Game</title>
+    <link rel="stylesheet" href="tictak.css">
+
+    <style>
+        body {
+            background-image: url("https://tse1.mm.bing.net/th?id=OIP.vTVAHbkiUmyLdlSFeaJ32QHaEK&pid=Api&P=0&h=180");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .container {
+            border: none;
+            width: 400px;
+            position: absolute;
+            top: 200px;
+            left: 34%;
+        }
+        
+        .container .btn1 button {
+            background: transparent;
+            outline: none !important;
+            border-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="score" id="r2"></span>
+        <div class="btn1">
+            <button id="d1" class="btn" onclick="fun1();result()"></button>
+            <button id="d2" class="btn" onclick="fun2();result()"></button>
+            <button id="d3" class="btn" onclick="fun3();result()"></button>
+        </div>
+        <div class="btn1">
+            <button id="d4" class="btn" onclick="fun4();result()"></button>
+            <button id="d5" class="btn" onclick="fun5();result()"></button>
+            <button id="d6" class="btn" onclick="fun6();result()"></button>
+        </div>
+        <div class="btn1">
+            <button id="d7" class="btn" onclick="fun7();result()"></button>
+            <button id="d8" class="btn" onclick="fun8();result()"></button>
+            <button id="d9" class="btn" onclick="fun9();result()"></button>
+        </div>
+        <div class="action p1">
+            <p class="player1">
+                <span class="p1" id="p1">player 1</span>
+                <span>(x)</span>
+                <span class="score" id="r1">0</span>
+            </p>
+            <p class="player2">
+                <span class="p1" id="p2">player 2</span>
+                <span>(o)</span>
+                <span class="score" id="r3">0</span>
+            </p>
+            <button id="btn" onclick="reset()">RESET</button>
+        </div>
+    </div>
+    <script src="tictac.js"></script>
+</body>
+</html>
