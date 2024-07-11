@@ -10,18 +10,15 @@ body {
 @media only screen and (max-width: 600px) {
     .container {
         border: none;
-        width: 100%;  /* Adjust width as needed */
-        position: fixed;
+        width: 100%;  
         left: 0;
     }
 
     body {
-        /* Ensure the background image styling is consistent */
         background-image: url("https://tse1.mm.bing.net/th?id=OIP.vTVAHbkiUmyLdlSFeaJ32QHaEK&pid=Api&P=0&h=180");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size:contain;
         background-position: center center;
-        /* background-attachment: fixed;  This can be problematic on mobile */
     }
 }
 
