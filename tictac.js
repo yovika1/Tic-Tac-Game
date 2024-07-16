@@ -32,12 +32,12 @@ a7.disabled=false;
 a8.disabled=false;
 a9.disabled=false;
 
-
+document.getElementById("r2").innerHTML="";
 } 
 
 function fun1() {
   if (flag == 1) {
-    // if you want change or replce the value thenu can write like this:
+    // if you want change or replace the value then u can write like this:
     document.getElementById("p1").innerHTML="player 1 turn";
     // or if u want you set the value TouchEvent, you can write like this:0
     a1.innerHTML = "x";
@@ -184,7 +184,8 @@ let c1=0;
 let c2=0;
 let count=0;
 function result(){
- 
+ let win  = false
+
   if(a1.innerHTML=="x"&& a2.innerHTML=="x"&& a3.innerHTML=="x")
 {
 document.getElementById("p1").innerHTML="player1  win";
@@ -200,6 +201,7 @@ a8.disabled="true";
 a9.disabled="true";
 c++;
 document.getElementById("r1").innerHTML=`${c}`;
+win = true;
 
 }
 
@@ -217,6 +219,7 @@ a8.disabled="true";
 a9.disabled="true";
 c++;
 document.getElementById("r1").innerHTML=`${c}`
+win = true;
 }
 
 else if(a7.innerHTML=="x"&& a8.innerHTML=="x"&& a9.innerHTML=="x")
@@ -233,6 +236,7 @@ a5.disabled="true";
 a6.disabled="true";
 c++;
 document.getElementById("r1").innerHTML=`${c}`;
+win = true;
 }
 
 else if(a1.innerHTML=="x"&& a4.innerHTML=="x" && a7.innerHTML=="x")
@@ -249,6 +253,8 @@ a6.disabled="true";
 a9.disabled="true";
 c++;
 document.getElementById("r1").innerHTML=`${c}`;
+win = true;
+
 }
 
 else if(a2.innerHTML=="x"&& a5.innerHTML=="x"&& a8.innerHTML=="x")
@@ -265,6 +271,8 @@ a6.disabled="true";
 a9.disabled="true";
 c++;
 document.getElementById("r1").innerHTML=`${c}`;
+win = true;
+
 }
 
 else if(a3.innerHTML=="x"&& a6.innerHTML=="x"&& a9.innerHTML=="x")
@@ -281,6 +289,8 @@ a5.disabled="true";
 a8.disabled="true";
 c++;
 document.getElementById("r1").innerHTML=`${c}`;
+win = true;
+
 }
 
 else  if(a1.innerHTML=="x"&& a5.innerHTML=="x"&& a9.innerHTML=="x")
@@ -297,6 +307,8 @@ a3.disabled="true";
 a6.disabled="true";
 c++;
 document.getElementById("r1").innerHTML=`${c}`;
+win = true;
+
 }
 
 else if(a3.innerHTML=="x"&& a5.innerHTML=="x"&& a7.innerHTML=="x")
@@ -313,6 +325,8 @@ a9.disabled="true";
 a8.disabled="true";
 c++;
 document.getElementById("r1").innerHTML=`${c}`;
+win = true;
+
 }
 
   if(a1.innerHTML=="0"&& a2.innerHTML=="0"&& a3.innerHTML=="0")
@@ -329,6 +343,7 @@ a8.disabled="true";
 a9.disabled="true";
 c1++;
 document.getElementById("r3").innerHTML=`${c1}`;
+win = true;
 
 }
 
@@ -346,6 +361,8 @@ a8.disabled="true";
 a9.disabled="true";
 c1++;
 document.getElementById("r3").innerHTML=`${c1}`;
+win = true;
+
 }
 
 else  if(a7.innerHTML=="0"&& a8.innerHTML=="0"&& a9.innerHTML=="0")
@@ -362,6 +379,8 @@ a5.disabled="true";
 a6.disabled="true";
 c1++;
 document.getElementById("r3").innerHTML=`${c1}`;
+win = true;
+
 }
 
 else  if(a1.innerHTML=="0"&& a4.innerHTML=="0"&& a7.innerHTML=="0")
@@ -378,6 +397,8 @@ a6.disabled="true";
 a9.disabled="true";
 c1++;
 document.getElementById("r3").innerHTML=`${c1}`;
+win = true;
+
 }
 
 else if(a2.innerHTML=="0"&& a5.innerHTML=="0"&& a8.innerHTML=="0")
@@ -394,6 +415,8 @@ a6.disabled="true";
 a9.disabled="true";
 c1++;
 document.getElementById("r3").innerHTML=`${c1}`;
+win = true;
+
 }
 
 else  if(a3.innerHTML=="0"&& a6.innerHTML=="0"&& a9.innerHTML=="0")
@@ -410,6 +433,8 @@ a5.disabled="true";
 a8.disabled="true";
 c1++;
 document.getElementById("r3").innerHTML=`${c1}`;
+win = true;
+
 }
 
 else  if(a1.innerHTML=="0"&& a5.innerHTML=="0"&& a9.innerHTML=="0")
@@ -426,11 +451,13 @@ a3.disabled="true";
 a6.disabled="true";
 c1++;
 document.getElementById("r3").innerHTML=`${c1}`;
+win = true;
+
 }
 
 else  if(a3.innerHTML=="0"&& a5.innerHTML=="0"&& a7.innerHTML=="0")
 {
-document.getElementById("p2").innerHTML="player 2  win";
+document.getElementById("p2").innerHTML="player 2 win";
 a3.style.backgroundColor="blue";
 a5.style.backgroundColor="blue";
 a7.style.backgroundColor="blue";
@@ -442,10 +469,14 @@ a9.disabled="true";
 a8.disabled="true";
 c1++;
 document.getElementById("r3").innerHTML=`${c1}`;
-}
-else if((a1.innerHTML=='x'||a1.innerHTML=='0')&&(a2.innerHTML=='x'||a2.innerHTML=='0')&&(a3.innerHTML=='x'||a3.innerHTML=='0')&&(a4.innerHTML=='x'||a4.innerHTML=='0')&&(a5.innerHTML=='x'||a5.innerHTML=='0')&&(a6.innerHTML=='x'||a6.innerHTML=='0')&&(a7.innerHTML=='x'||a7.innerHTML=='0')&&(a8.innerHTML=='x'||a8.innerHTML=='0')&&(a9.innerHTML=='x'||a9.innerHTML=='0'))
-{
-  
-document.getElementById("r2").innerHTML="match tie"
+}else if (!win && checkTie()) {
+  document.getElementById("r2").innerHTML = "Match Tie";
+  win = true;
 
-}}
+}
+}
+
+
+function checkTie() {
+return [a1, a2, a3, a4, a5, a6, a7, a8, a9].every(cell => cell.innerHTML === "x" || cell.innerHTML === "0");
+}

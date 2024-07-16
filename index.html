@@ -9,9 +9,10 @@
     </style>
 </head>
 <body>
+ <section class=" custom_class">
     <div class="container">
         <button id="rbtn" onclick="reset()">RESET</button>
-        <span class="score" id="r2"></span>
+        <span class="score-die" id="r2"></span>
         <div class="btn1">
             <button id="d1" class="btn" onclick="fun1();result()"></button>
             <button id="d2" class="btn" onclick="fun2();result()"></button>
@@ -27,7 +28,7 @@
             <button id="d8" class="btn" onclick="fun8();result()"></button>
             <button id="d9" class="btn" onclick="fun9();result()"></button>
         </div>
-        <div class="action p1">
+        <div class="action">
             <p class="player1">
                 <span class="p1" id="p1">player 1</span>
                 <span>(x)</span>
@@ -40,6 +41,7 @@
             </p>
         </div>
     </div>
+ </section>
     <script src="tictac.js"></script>
 </body>
 </html>

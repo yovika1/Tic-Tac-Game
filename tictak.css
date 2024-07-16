@@ -1,33 +1,35 @@
 body {
-    background-image: url("https://tse1.mm.bing.net/th?id=OIP.vTVAHbkiUmyLdlSFeaJ32QHaEK&pid=Api&P=0&h=180");
+    background-image: url("https://tse1.mm.bing.net/th?id=OIP.vTVAHbkiUmyLdlSFeaJ32QHaEK&pid=Api&P=0&h=180") !important;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: top center;
     background-attachment: fixed;
-
+    background-color: transparent;
+min-height: 100vh;
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     .container {
         border: none;
         width: 100%;
         position: fixed;
         left: -54%;
     }
-  }
+  } */
 
 .container {
     border: none;
     width: 400px;
-    position: absolute;
+    /* position: absolute; */
     top: 200px;
     left: 34%;
+    background-color: transparent !important;
 }
 
 .container .btn1 button {
     background: transparent;
     outline: none !important;
-    border-color: blue;
+    border-color: blue !important;
 }
 
  .btn1{
@@ -51,7 +53,7 @@ body {
     padding: 2px;
      cursor: pointer;
      font-weight: 700;
-     margin-top: -10%;
+     margin-top: -2%;
      position: absolute;
      color:rgb(32, 28, 25);
      background-color: rgb(255, 210, 114);
@@ -190,7 +192,8 @@ body {
      top: 50%;
      width: 600px;
      margin-left: -300px;
-     margin-top: 280px;
+     margin-top: 230px;
+     
      text-align: center;
      cursor: pointer;
      user-select: none;
@@ -216,11 +219,12 @@ body {
  .score-die{
      font-size: 50px;
      color:antiquewhite;
-     display: block;
      height: 60px;
-     padding: 10px 0 0 0;
+     display: flex;
+     justify-content: flex-end;
+     padding: 8px 0 0 0;
      will-change: transform;
-     margin-bottom: 150px;
+     margin-bottom: 2px;
  }
  
  .action.p1 .p2{
@@ -238,3 +242,12 @@ body {
  cursor: pointer;
  }
  
+
+ .custom_class{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+ }
